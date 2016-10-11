@@ -2,3 +2,9 @@
 
 ## Giới thiệu về Recommender System
 Là 1 tập hợp những thông tin con của hệ thống, những thông tin con này được dung để tiên đoán được sở thích, rating của user trên những sản phẩm. Recommender System đã trở nên rất phổ biến trong những năm gần đây, và được sử dụng trong một loạt các lĩnh vực:. một số ứng dụng phổ biến bao gồm phim ảnh, âm nhạc, tin tức, sách, các bài báo nghiên cứu, các truy vấn tìm kiếm, thẻ xã hội, nhà hàng, dịch vụ tài chính, bảo hiểm nhân thọ, hẹn hò trực tuyến.
+
+## Một Vài loại recommender system
+- Content-based filtering.
+Phương pháp dựa trên mô tả về những những item với user profile cụ thể có khả năng sẽ thích item đó. Hầu hết các hệ thống thường dùng những keyword để mô tả những item và User’s Profile. Ví dụ chúng ta có những nhà tuyển dụng họ post những jobs về “Ruby On Rails” và với những jobs như vậy chúng ta sẽ cần tìm những User's Profile mà sẽ thích “Ruby On Rails job”.  Bởi vì dùng những keywrod để description cho những item và user’s profile cho nên giải thuật tf-idf. Giả sử tôi có 64 jobs bao gồm nhiều loại jobs java, 3 ruby vvv. Bài toán đặt ra là phải làm cách nào có thể recommend jobs ruby cho 1 ruby developer. Chúng ta sẽ thử áp dụng tf-idf trên jobs document để tìm những vector keywords cho từng documents, loại bỏ những common words. Sau đó dùng giải thuật K-NN tính khoảng cách của user và jobs, hoặc là khoảng cách giữa user và user. Bởi vì nếu 2 users có the same profile chúng ta có thể dựa vào history interaction để recommend những job cho users. Ví dụ job đó được apply bởi user có java skill, location là hcm, .v.v. Thì user có the same profile có khả năng sẽ apply for this job.
+
+<p style="text-align: center;">djdjkđ</p>
